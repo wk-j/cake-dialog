@@ -1,2 +1,2 @@
-powershell -File build.ps1 %* -Verbosity Diagnostic
+powershell -File build.ps1 %*
 pause

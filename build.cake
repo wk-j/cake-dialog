@@ -42,7 +42,7 @@ Task("Commit").Does(() => {
         options.Title = "Enter commit message";
         options.OnOk = (message) => {
             process("git", "add --all");
-            process("git", "commit -m \"{message}\"");
+            process($"git", "commit -m \"{message}\"");
             process("git", "push -u github master");
         };
     });
