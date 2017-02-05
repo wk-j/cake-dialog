@@ -2,21 +2,23 @@
 using System;
 using Gtk;
 using CakeDialog;
+using Xunit;
+using CakeDialog.Forms;
 
-namespace Cake.Dialog.Tests
+namespace CakeDialog.Tests
 {
-	[TestFixture()]
 	public class CakeDialogSpec
 	{
-		[Test()]
+		[Fact]
+		[Test]
 		public void ShowDialog()
 		{
 			Application.Init();
 			var dlg = new CakeInputDialog(new CakeInputDialogOptions {
 				Text = "Hello, world!",
 				Title = "Show me message",
-				OnOk = (obj) => { 
-
+				OnOk = (obj) => {
+					Console.Write(obj);
 				}
 			});
 			dlg.Initialize();
@@ -25,7 +27,7 @@ namespace Cake.Dialog.Tests
 			Application.Run();
 		}
 
-		[Test]
+		[Fact]
 		public void ShowWindow()
 		{
 			Application.Init();
@@ -34,7 +36,7 @@ namespace Cake.Dialog.Tests
 			btn.Events |= Gdk.EventMask.ButtonPressMask | Gdk.EventMask.ButtonReleaseMask;
 
 			btn.Clicked += (s, e) => {
-				Console.WriteLine(e);
+				Application.Quit();
 			};
 
 			var window = new Window("helloworld");

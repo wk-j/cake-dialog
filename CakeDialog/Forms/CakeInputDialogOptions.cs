@@ -1,5 +1,5 @@
 ﻿using System;
-namespace CakeDialog
+namespace CakeDialog.Forms
 {
 	public class CakeInputDialogOptions
 	{
