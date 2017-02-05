@@ -4,11 +4,11 @@ namespace CakeDialog.Forms
 {
 	public partial class CakeInputDialog : Gtk.Dialog
 	{
-		private readonly CakeInputDialogOptions _options;
+		private readonly DialogOptions _options;
 
 		TextView detailTextView = new TextView();
 
-		public CakeInputDialog(CakeInputDialogOptions options)
+		public CakeInputDialog(DialogOptions options)
 		{
 			_options = options;
 		}

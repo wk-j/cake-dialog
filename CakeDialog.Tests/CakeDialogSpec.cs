@@ -14,9 +14,9 @@ namespace CakeDialog.Tests
 		public void ShowDialog()
 		{
 			Application.Init();
-			var dlg = new CakeInputDialog(new CakeInputDialogOptions {
+			var dlg = new CakeInputDialog(new DialogOptions {
 				Text = "Hello, world!",
-				Title = "Show me message",
+				Title = "Enter commit message",
 				OnOk = (obj) => {
 					Console.Write(obj);
 				}
