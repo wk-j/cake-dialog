@@ -39,10 +39,10 @@ Action<string, string> process = (cmd, args) => {
 
 Task("Commit").Does(() => {
     InputDialog(options => {
-        options.Title = "Enter commit message";
+        options.Title = "Enter Commit Message";
         options.OnOk = (message) => {
             process("git", "add --all");
-            process($"git", "commit -m \"{message}\"");
+            process("git", $"commit -m \"{message}\"");
             process("git", "push -u github master");
         };
     });
