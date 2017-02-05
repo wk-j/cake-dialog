@@ -2,6 +2,12 @@
 
 Show input dialog
 
+## Support
+
+- [x] Windows
+- [ ] macOS
+- [ ] Linux
+
 ## Sample
 
 ```csharp

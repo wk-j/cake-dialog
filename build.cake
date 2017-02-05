@@ -31,6 +31,23 @@ Task("Publish-Nuget")
         });
     });
 
+Action<string, string> process = (cmd, args) => {
+    StartProcess(cmd, new ProcessSettings {
+        Arguments = args
+    });
+};
+
+Task("Commit").Does(() => {
+    InputDialog(options => {
+        options.Title = "Enter commit message";
+        options.OnOk = (message) => {
+            process("git", "add --all");
+            process("git", "commit -m \"{message}\"");
+            process("git", "push -u github master");
+        };
+    });
+});
+
 Task("Clean").Does(() => {
     CleanDirectory("./nuget");
 });
