@@ -1,5 +1,8 @@
 ﻿using NUnit.Framework;
 using System;
+using Gtk;
+using CakeDialog;
+
 namespace Cake.Dialog.Tests
 {
 	[TestFixture()]
@@ -8,6 +11,11 @@ namespace Cake.Dialog.Tests
 		[Test()]
 		public void TestCase()
 		{
+			Application.Init();
+			var dlg = new CakeInputDialog();
+			dlg.Show();
+
+			Application.Run();
 		}
 	}
 }
