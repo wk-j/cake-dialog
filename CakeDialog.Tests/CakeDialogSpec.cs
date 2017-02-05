@@ -9,7 +9,7 @@ namespace Cake.Dialog.Tests
 	public class CakeDialogSpec
 	{
 		[Test()]
-		public void TestCase()
+		public void ShowDialog()
 		{
 			Application.Init();
 			var dlg = new CakeInputDialog(new CakeInputDialogOptions {
@@ -19,8 +19,34 @@ namespace Cake.Dialog.Tests
 
 				}
 			});
+			dlg.Initialize();
 
 			dlg.ShowAll();
+			Application.Run();
+		}
+
+		[Test]
+		public void ShowWindow()
+		{
+			Application.Init();
+
+			var btn = new Button("Hello World");
+			btn.Events |= Gdk.EventMask.ButtonPressMask | Gdk.EventMask.ButtonReleaseMask;
+
+			btn.Clicked += (s, e) => {
+				Console.WriteLine(e);
+			};
+
+			var window = new Window("helloworld");
+			window.Events |= Gdk.EventMask.ButtonPressMask | Gdk.EventMask.ButtonReleaseMask;
+
+			window.DeleteEvent += (s, e) => {
+				Console.Write(e);
+			}; 
+
+			window.Add(btn);
+			window.ShowAll();
+
 			Application.Run();
 		}
 	}

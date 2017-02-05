@@ -39,6 +39,7 @@
     <Compile Include="gtk-gui\generated.cs" />
     <Compile Include="CakeInputDialog.cs" />
     <Compile Include="gtk-gui\CakeDialog.CakeInputDialog.cs" />
+    <Compile Include="CakeInputDialogOptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
