@@ -86,6 +86,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CakeDialog.Mac\CakeDialog.Mac.csproj">
+      <Project>{14eb4b8b-41ef-48b7-84fb-844517052012}</Project>
+      <Name>CakeDialog.Mac</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CakeDialog\CakeDialog.csproj">
       <Project>{29466DE8-EDD2-4294-9E86-A49AE9BD4843}</Project>
       <Name>CakeDialog</Name>

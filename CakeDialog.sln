@@ -1,9 +1,17 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeDialog.Tests", "CakeDialog.Tests\CakeDialog.Tests.csproj", "{91AFE348-86DA-424C-AC6C-9CB6125032A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeDialog", "CakeDialog\CakeDialog.csproj", "{29466DE8-EDD2-4294-9E86-A49AE9BD4843}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B6458B9-820B-423A-B553-87A7F3EEDD52}"
+	ProjectSection(SolutionItems) = preProject
+		build.cake = build.cake
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeDialog.Mac", "CakeDialog.Mac\CakeDialog.Mac.csproj", "{14EB4B8B-41EF-48B7-84FB-844517052012}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +27,12 @@ Global
 		{29466DE8-EDD2-4294-9E86-A49AE9BD4843}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29466DE8-EDD2-4294-9E86-A49AE9BD4843}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29466DE8-EDD2-4294-9E86-A49AE9BD4843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EB4B8B-41EF-48B7-84FB-844517052012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EB4B8B-41EF-48B7-84FB-844517052012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EB4B8B-41EF-48B7-84FB-844517052012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EB4B8B-41EF-48B7-84FB-844517052012}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

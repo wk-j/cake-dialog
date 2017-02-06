@@ -78,6 +78,7 @@
             // 
             // detailTextBox
             // 
+            this.detailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.detailTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.detailTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detailTextBox.Location = new System.Drawing.Point(0, 0);

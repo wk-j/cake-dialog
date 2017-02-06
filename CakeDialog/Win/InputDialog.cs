@@ -1,5 +1,4 @@
-﻿using CakeDialog.Forms;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace CakeDialog.Win
@@ -10,6 +9,8 @@ namespace CakeDialog.Win
 
         public InputDialog(DialogOptions options)
         {
+            Application.EnableVisualStyles();
+
             _options = options;
 
             InitializeComponent();
