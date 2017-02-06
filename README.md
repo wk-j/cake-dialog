@@ -2,6 +2,8 @@
 
 Show input dialog
 
+![](Images/Cake-Dialog.png)
+
 ## Support
 
 - [x] Windows
