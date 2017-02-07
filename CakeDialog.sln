@@ -9,6 +9,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B6458B9-820B-423A-B553-87A7F3EEDD52}"
 	ProjectSection(SolutionItems) = preProject
 		build.cake = build.cake
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeDialog.Mac", "CakeDialog.Mac\CakeDialog.Mac.csproj", "{14EB4B8B-41EF-48B7-84FB-844517052012}"
